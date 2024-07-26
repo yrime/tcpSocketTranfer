@@ -6,7 +6,7 @@ class isServer:
     def run(self):
 
         s = socket.socket()  # Create a socket object
-        host = 'localhost'  # Get local machine name
+        host = '0.0.0.0'  # Get local machine name
         port = 21225  # Reserve a port for your service.
         s.bind((host, port))  # Bind to the port
         print("Server bind", host, port)
